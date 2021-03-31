@@ -1,0 +1,15 @@
+
+Instructions on importing the database file: 
+
+1- Make sure Sql Express and Sql Server Management Studio (SSMS) are installed.
+
+2- Locate the file titled "DatabaseScript.sql" in the project folder
+
+3- Right click on the "DatabaseScript.sql" file and Open with SSMS
+
+4- The first two lines of the file will say:
+		 "USE [master]
+		  GO"
+	Replace [master] with "Clinic" 
+
+5- Click on Execute at the top and the database will be created and populated

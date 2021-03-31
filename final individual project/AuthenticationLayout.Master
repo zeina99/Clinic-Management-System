@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AuthenticationLayout.master.cs" Inherits="final_individual_project.AuthenticationLayout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title> Clinic Management System</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link href="Styles/Styles.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="center-title">
+            <span class="material-icons-outlined md-36">business
+            </span> 
+            <h2> Clinic Management System</h2>
+        </div>
+
+         <div class ="Authentication">
+
+       
+            
+            <div class="auth-window">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+          </div>
+             <div class="placeholder">
+               
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mainpage.master.cs" Inherits="final_individual_project.mainpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Clinic Management System</title>
+    <link href="Styles/Styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrap">
+        <nav class="navbar">
+            <div class="nav-title">
+                <h2>Clinic Management System</h2>
+            </div>
+            <div class="nav-util">
+               
+                <asp:Label CssClass="navutil-padding" ID="Label1" runat="server" Text="Today's Date: "></asp:Label>
+                <asp:Label CssClass="navutil-padding" ID="DateLabel" runat="server" Text=""></asp:Label>
+                 <asp:Button CssClass="navutil-padding" ID="LogoutButton" runat="server" Text="Logout" OnClick="LogoutButton_Click" />
+            </div>
+        </nav>
+
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="True"></asp:ScriptManager>
+
+        <div class="page-wrapper">
+            <div class="sidebar">
+                <div class="profile">
+                    <img class="dashboardImg" src="/Images/genericprofile.jpg" />
+                    <h3 class="patient-Name">Welcome back
+            <asp:Label CssClass="patient-Name" ID="patientName" runat="server" Text=""></asp:Label>
+
+                    </h3>
+                </div>
+           <asp:ContentPlaceHolder ID="SideBar" runat="server">
+            </asp:ContentPlaceHolder>
+                </div>
+            <div class="maincontent">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+        </div>
+     </div>
+    </form>
+
+</body>
+</html>
